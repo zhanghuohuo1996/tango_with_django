@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../../static/css/style2.css">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <style>
+        body{background: url("../../static/images/slide_2.jpg");background-size: 100%}
+    </style>
+    <script type="text/javascript" src="../../static/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        function checkform(){
+            var user=document.getElementById("userid").value;
+            var pass=document.getElementById("password").value;
+			{% for i in logcheck%}
+            if(user=={{i.user}}&&pass=={{i.password}})
+			{
+                window.location="dating.html";
+                var newnode=document.createElement("li");
+                var hhh=document.getElementById("spanlog");
+                hhh.innerHTML="David的空间";
+                var oldnode=document.getElementById("oldlog");
+                newnode.innerHTML=oldnode.innerHTML;
+                oldnode.parentNode.replaceChild(newnode,oldnode);
+			} 
+			else{alert('错误，重新输入');}
+			{%endfor%}
+        }
+    </script>
+</head>
+<body>
+<header id="fh5co-header" role="banner">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Mobile Toggle Menu Button -->
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                <a class="navbar-brand" href="index.html">Gayest</a>
+            </div>
+            <div id="fh5co-navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="index.html"><span>首页 <span class="border"></span></span></a></li>
+                    <li class="active"><a href=""><span>交友<span class="border"></span></span></a></li>
+                    <li><a href="news.html"><span>新闻<span class="border"></span></span></a></li>
+                    <li><a href="party.html"><span>爬梯 <span class="border"></span></span></a></li>
+                    <li class="call-to-action" id="oldlog"><a class="turnred" href="" data-target="#myModal" data-toggle="modal"><span id="spanlog">登录</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <div class="modal-dialog" style="width: 600px;height: 300px;position: absolute;left:50%;margin-left: -300px;top:50%;margin-top: -300px;">
+         <div class="modal-content">
+                    <!-- <div class="modal-header">
+                         </div>-->
+				<form action="submit-action" method="post">
+				<div>
+                    <div class="modal-body">
+                        <div class="login-top">
+                            <h1>注 册</h1>							
+                                <input type="text" value="User Id" name="userName" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入用户名';}">
+                                <input type="text" value="password" name="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入密码';}">	
+						<div class="forgot">
+                                <p style="font-size:8px">{{error}}<p> 	
+								<input type="submit" value="注册" data-dismiss="modal" id="login">	
+                            </div>
+                        </div>
+                    </div>
+					</div>
+				</form>
+          </div>
+				<div class="login-bottom">
+                </div>
+        </div>
+       
+</body>
+</html>

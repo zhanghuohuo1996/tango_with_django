@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" href="../../static/css/nivo-lightbox.css">
+    <link rel="stylesheet" href="../../static/css/templatemo_style.css">
+    <link rel="stylesheet" href="../../static/css/default.css">
+    <link rel="stylesheet" href="../../static/css/icomoon.css">
+    <style>
+        .big-image{
+            width:400px;
+            height: 300px;
+        }
+        .small-image{
+            width: 300px;
+            height: 200px;
+        }
+		.img-responsive{
+		width:600px;
+		height:450px
+		}
+    </style>
+	<script type="text/javascript">
+	function join(partyId,username)
+	{
+	
+	$.ajax({
+	type:'POST',
+	url:"/jiaru",
+	data:{
+	partyid:partyId,
+	username:username
+	},
+	dataType:'JSON',
+	success:function(result)
+	{
+	alert(result.message);
+	},
+	error:function()
+	{alert("errror!");}
+	});
+	
+	}
+	</script>
+</head>
+<body>
+<header id="fh5co-header" role="banner">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Mobile Toggle Menu Button -->
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                <a class="navbar-brand" href="index.html">Gayest</a>
+            </div>
+            <div id="fh5co-navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><span>首页 <span class="border"></span></span></a></li>
+                    <li><a href="login.html"><span>交友<span class="border"></span></span></a></li>
+                    <li><a href="news.html"><span>新闻<span class="border"></span></span></a></li>
+                    <li class="active"><a href="elements.html"><span>爬梯 <span class="border"></span></span></a></li>
+                       {% if state %}
+						<li><a class="turnred" href="" data-target="#myModal" data-toggle="modal"><span id="a" > {{username}} 的空间</span></a></li>
+						{% else %}
+                        <li class="call-to-action" id="oldlog"><a class="turnred" href="" data-target="#myModal" data-toggle="modal"><span id="spanlog">登录</span></a></li>
+                        {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="about" style="margin-top: 150px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <img src="{{result.4}}" class="img-responsive" alt="about img">
+            </div>
+            <div class="col-md-6 col-sm-12 about-des">
+                <h2>{{result.1}}</h2>
+                <p><i class="icon-user"></i> {{result.5}}</p>
+                <p><i class="icon-phone"></i> {{result.6}}</p>
+                <p><i class="icon-email"></i> {{result.7}}</p>
+                <p><i class="icon-credit"></i> {{result.8}}</p>
+                <p><i class="icon-time-slot"></i> {{result.2}}</p>
+                <p><i class="icon-address"></i> {{result.3}}</p>
+                <p><i class="icon-man"></i> 15人已报名</p>
+                <a href="javascript:void(0)" class="btn btn-default" onclick="join({{result.0}},'{{username}}')">现在报名</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <div class="row" style="padding-top:50px">
+            <div class="col-md-offset-2 col-md-8 col-sm-12">
+                <h2>更多说明</h2>
+                <p>如果你性格开放，敢于突破自己就加入我们的大派对吧！在这里你可以找到那个真正的自己！</p>
+            </div>
+        </div>
+
+        <div class="row mt30" style="padding-top:30px">
+
+            <div class="col-md-4 col-sm-4 col-xs-6">
+                <a href="../../static/images/party01.jpg" data-lightbox-gallery="portfolio-gallery"><img class="big-image" src="../../static/images/party01.jpg" alt="portfolio img"></a>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6">
+                <a href="../../static/images/party02.jpg" data-lightbox-gallery="portfolio-gallery"><img class="big-image" src="../../static/images/party02.jpg" alt="portfolio img"></a>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6">
+                <a href="../../static/images/party03.jpg" data-lightbox-gallery="portfolio-gallery"><img class="big-image" src="../../static/images/party03.jpg" alt="portfolio img"></a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <a href="../../static/images/party04.jpg" data-lightbox-gallery="portfolio-gallery"><img src="../../static/images/party04.jpg" class="small-image" alt="portfolio img"></a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <a href="../../static/images/party05.jpg" data-lightbox-gallery="portfolio-gallery"><img src="../../static/images/party05.jpg" class="small-image" alt="portfolio img"></a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <a href="../../static/images/party06.jpg" data-lightbox-gallery="portfolio-gallery"><img src="../../static/images/party06.jpg" class="small-image" alt="portfolio img"></a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <a href="../../static/images/party07.jpg" data-lightbox-gallery="portfolio-gallery"><img src="../../static/images/party07.jpg" class="small-image" alt="portfolio img"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../static/js/jquery.js"></script>
+<script src="../../static/js/bootstrap.min.js"></script>
+<script src="../../static/js/nivo-lightbox.min.js"></script>
+<script src="../../static/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,1007 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <title>news</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+    <meta name="author" content="FREEHTML5.CO" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+
+    </style>
+    <!-- Google Webfonts -->
+    <link href='http://fonts.useso.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../../static/css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="../../static/css/icomoon.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="../../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../static/css/owl.theme.default.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="../../static/css/magnific-popup.css">
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" href="../../static/css/style2.css">
+    <link rel="stylesheet" href="../../static/css/style3.css">
+    <link rel="stylesheet" href="../../static/css/set1.css">
+    <!-- Modernizr JS -->
+    <script src="../../static/js/modernizr-2.6.2.min.js"></script>
+
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../static/js/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function(){
+            $("#login").click(function(){
+                var newnode=document.createElement("li");
+                var hhh=document.getElementById("spanlog");
+                hhh.innerHTML="David的空间";
+                var oldnode=document.getElementById("oldlog");
+                newnode.innerHTML=oldnode.innerHTML;
+                oldnode.parentNode.replaceChild(newnode,oldnode);
+            })
+        });
+        $(document).ready(function(){
+
+            // hide #back-top first
+            $("#back-top").hide();
+
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('#back-top').fadeIn();
+
+                    } else {
+                        $('#back-top').fadeOut();
+
+                    }
+                });
+
+                // scroll body to 0px on click
+                $('#back-top1').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+                $('#back-news').click(function () {
+                });
+                $('#chat').click(function () {
+                });
+
+            });
+
+        });
+    </script>
+    <style>/*
+Back to top button
+*/
+    #back-top  {
+        position: fixed;
+        bottom: 30px;
+        margin-left: -150px;
+    }
+    #fh5co-navbar span{color: #ffffff}
+    #back-top  a {
+        width: 50px;
+        display: block;
+        text-align: center;
+        font: 11px/100% Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #bbb;
+        /* background color transition */
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        transition: 1s;
+    }
+    #fh5co-header .navbar-brand:hover {
+        color: #222222 !important; }
+    #back-top  a:hover {
+        color: #000;
+    }
+    /* arrow icon (span tag) */
+    #back-top span {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-bottom: 2px;
+        background: #ddd url(images/up-arrow.png) no-repeat center center;
+        /* rounded corners */
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        /* background color transition */
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        transition: 1s;
+    }
+    #back-news span
+    {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-bottom: 2px;
+        background: #ddd url(images/back-news.png) no-repeat center center;
+        /* rounded corners */
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        /* background color transition */
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        transition: 1s;
+    }
+    #chat span
+    {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-bottom: 2px;
+        background: #ddd url(images/chat.png) no-repeat center center;
+        /* rounded corners */
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        /* background color transition */
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        transition: 1s;
+    }
+    #back-top  a:hover span {
+        background-color: #777;
+    }</style>
+
+</head>
+<body class="sticky-header left-side-collapsed">
+<!--<header id="fh5co-header" role="banner">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                &lt;!&ndash; Mobile Toggle Menu Button &ndash;&gt;
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                <a class="navbar-brand" href="index.html">Gayest</a>
+            </div>
+            <div id="fh5co-navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html"><span>首页 <span class="border"></span></span></a></li>
+                    <li><a href="right-sidebar.html"><span>交友<span class="border"></span></span></a></li>
+                    <li><a href="news.html"><span>新闻<span class="border"></span></span></a></li>
+                    <li><a href="elements.html"><span>爬梯 <span class="border"></span></span></a></li>
+                    <li class="call-to-action" id="oldlog"><a class="turnred" href="" data-target="#myModal" data-toggle="modal"><span id="spanlog">登录</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>-->
+<div>
+<header id="fh5co-header" role="banner" style="position:fixed;">
+    <nav class="navbar navbar-default" role="navigation" style="background-color: #000000">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Mobile Toggle Menu Button -->
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                <a class="navbar-brand" href="index.html" style="color: #ffffff">Gayest</a>
+            </div>
+            <div id="fh5co-navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><span>首页 <span class="border"></span></span></a></li>
+					{% if state %}
+                    <li><a href="dating.html"><span>交友<span class="border"></span></span></a></li>
+					{% else %}
+					<li><a href="login.html"><span>交友<span class="border"></span></span></a></li>
+					{% endif %}
+                    <li class="active"><a href="news.html"><span>新闻<span class="border"></span></span></a></li>
+                    <li><a href="party.html"><span>爬梯 <span class="border"></span></span></a></li>
+                       {% if state %}
+						<li><a class="turnred" href="" data-target="#myModal" data-toggle="modal"><span id="a" > {{username}} 的空间</span></a></li>
+						{% else %}
+                        <li class="call-to-action" id="oldlog"><a class="turnred" href="" data-target="#myModal" data-toggle="modal"><span id="spanlog">登录</span></a></li>
+                        {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    </div>
+<!-- END .header -->
+<section>
+    <!-- left side start-->
+    <!-- left side end-->
+    <!-- main content start-->
+    <div class="main-content">
+        <!-- header-starts -->
+        <div id="page-wrapper" style="margin-top: 20px">
+            <div class="top-grids">
+                <div class="top-grids-info">
+                    <!-- top-grid-right -->
+                    <div class="col-md-3 top-grid-right basket-top-grid-right">
+                        <!-- most-view-grids -->
+                        <!-- //most-view-grids -->
+                        <!-- latest -->
+                        <div class="today-match latest basket-latest">
+                            <div class="today-match-heading latest-heading">
+                                <h3>热门头条</h3>
+                            </div>
+                            <div class="match-grid latest-grid">
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Suspendisse ac ligula tempus, pellentesque ante quis</a>
+                                    <p>Mar 29, 2016 1:18 AM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Ut sed leo a diam dignissim euismod. Etiam vestibulum</a>
+                                    <p>Mar 28, 2016 9:23 PM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Suspendisse ac ligula tempus, pellentesque ante quis</a>
+                                    <p>Mar 28, 2016 8:19 PM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Suspendisse ac ligula tempus, pellentesque ante quis</a>
+                                    <p>Mar 28, 2016 6:47 PM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Suspendisse ac ligula tempus, pellentesque ante quis</a>
+                                    <p>Mar 28, 2016 3:44 PM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Vestibulum gravida pellentesque lacus ut maximus</a>
+                                    <p>Mar 28, 2016 1:34 PM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Aliquam feugiat rhoncus ex, quis convallis dui dapibus eget</a>
+                                    <p>Mar 28, 2016 12:49 PM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Duis posuere risus vel varius ultricies</a>
+                                    <p>Mar 28, 2016 12:45 PM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Donec pretium dictum fermentum</a>
+                                    <p>Mar 28, 2016 11:59 AM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Phasellus nunc dolor, laoreet eu tristique sit amet, bibendum ut orci</a>
+                                    <p>Mar 28, 2016 11:58 AM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Nullam pharetra nulla eget nulla tincidunt aliquet</a>
+                                    <p>Mar 28, 2016 11:57 AM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Vestibulum gravida pellentesque lacus ut maximus</a>
+                                    <p>Mar 28, 2016 1:34 PM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Aliquam feugiat rhoncus ex, quis convallis dui dapibus eget</a>
+                                    <p>Mar 28, 2016 12:49 PM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Duis posuere risus vel varius ultricies</a>
+                                    <p>Mar 28, 2016 12:45 PM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Donec pretium dictum fermentum</a>
+                                    <p>Mar 28, 2016 11:59 AM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Phasellus nunc dolor, laoreet eu tristique sit amet, bibendum ut orci</a>
+                                    <p>Mar 28, 2016 11:58 AM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Nullam pharetra nulla eget nulla tincidunt aliquet</a>
+                                    <p>Mar 28, 2016 11:57 AM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Aliquam feugiat rhoncus ex, quis convallis dui dapibus eget</a>
+                                    <p>Mar 28, 2016 12:49 PM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Duis posuere risus vel varius ultricies</a>
+                                    <p>Mar 28, 2016 12:45 PM ET</p>
+                                </div>
+                                <div class="latest-grid-info">
+                                    <a href="single.html">Donec pretium dictum fermentum</a>
+                                    <p>Mar 28, 2016 11:59 AM ET</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //latest -->
+                        <div class="top-grid-left-right-grid basket-left-right-grid">
+                            <div class="top-grid-left-right-top">
+                                <a href="single.html">Maecenas ut molestie neque, eget faucibus turpis</a>
+                                <p>Nunc accumsan neque id massa molestie, ac semper quam maximus.Maecenas suscipit, ipsum vel condimentum</p>
+                            </div>
+                            <div class="top-grid-left-right-img">
+                                <a href="single.html"><img src="../../static/images/n5.jpg" alt="" /></a>
+                            </div>
+                            <div class="top-grid-left-right-info">
+                                <a class="text" href="single.html">Lorem ipsum dolor sit amet</a>
+                                <p>Nam id sollicitudin felis. Nulla non bibendum arcu.Suspendisse venenatis venenatis mi</p>
+                            </div>
+                        </div>
+
+
+                        <div class="clearfix"> </div>
+                    </div>
+                    <!-- //top-grid-right -->
+                    <!-- top-grid-left -->
+                    <div class="col-md-9 top-grid-left basket-top-grid-left">
+                        <!-- top-big-grids -->
+                        <div class="top-big-grids">
+                            <div class="col-md-8 top-grid-left-left">
+                                <div class="top-grid-left-left-grids">
+                                    <div class="col-md-8 top-grid-left-img">
+                                        <a href="single.html?name=oooo"><img src="../../static/images/n1.jpg" style="height: 300px" alt="" ></a>
+                                    </div>
+                                    <div style="background: #ffffff;height: 300px" >
+                                        <div class="col-md-4 top-grid-left-info">
+                                            <a class="text" href="single.html?id=0">{{news_list1.title}}</a>
+                                            <p>英国电子乐队“年年”(Years & Years)在世界上最大的露天音乐节“格拉斯顿伯里音乐节”亮相，主唱手奥利·亚历山大(Olly Alexander)不仅献唱多首热门歌曲，更以慷慨激昂的发言，令歌迷们深受感动和鼓励。</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                                <!-- three-grids -->
+                                <div class="three-grids">
+                                    <div class="three-grid">
+                                        <div class="three-grid-info">
+                                            <div class="three-grid-img">
+                                                <a href="single.html"><img src="../../static/images/n2.jpg" alt="" /></a>
+                                            </div>
+                                            <div class="three-grid-text">
+                                                <div class="three-grid-text-heading">
+                                                    <a class="text" href="single.html?id=1">{{news_list2.title}}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="three-grid">
+                                        <div class="three-grid-info">
+                                            <div class="three-grid-img">
+                                                <a href="single.html"><img src="../../static/images/n5.jpg" alt="" /></a>
+                                            </div>
+                                            <div class="three-grid-text">
+                                                <div class="three-grid-text-heading">
+                                                    <a class="text" href="single.html?id=2">{{news_list3.title}}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="three-grid">
+                                        <div class="three-grid-info">
+                                            <div class="three-grid-img">
+                                                <a href="single.html"><img src="../../static/images/n7.jpg" alt="" /></a>
+                                            </div>
+                                            <div class="three-grid-text">
+                                                <div class="three-grid-text-heading">
+                                                    <a class="text" href="single.html">Fusce ornare congue ligula vel placerat</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                                <!-- //three-grids -->
+                                <!-- two-grids -->
+                                <div class="two-grids">
+                                    <div class="col-md-6 two-grid-left">
+                                        <div class="two-grid-info">
+                                            <div class="two-grid-img">
+                                                <a href="single.html"><img src="../../static/images/n3.jpg" alt="" /></a>
+                                            </div>
+                                            <div class="two-grid-text" style="height: 150px">
+                                                <div class="three-grid-text-heading two-grid-text-heading">
+                                                    <a class="text" href="single.html">Google用VR技术转播同性恋巡游</a>
+                                                    <p>　　Google在6月23日发布的VR样片中说：“骄傲巡游是为了庆祝你的身份和爱情，但是仍有70多个国家将同性恋视为犯罪。”</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 two-grid-right">
+                                        <div class="two-grid-info">
+                                            <div class="two-grid-img">
+                                                <a href="single.html"><img src="../../static/images/n4.jpg" alt="" /></a>
+                                            </div>
+                                            <div class="two-grid-text" style="height: 150px">
+                                                <div class="three-grid-text-heading two-grid-text-heading" >
+                                                    <a class="text" href="#" >Google用VR技术转播同性恋巡游</a>
+                                                    <p>　　Google在6月23日发布的VR样片中说：“骄傲巡游是为了庆祝你的身份和爱情，但是仍有70多个国家将同性恋视为犯罪。”</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                                <!-- //two-grids -->
+                                <!-- two-grids-bottom -->
+                                <div class="two-grids-bottom">
+                                    <div class="two-grids-bottom-grids">
+                                        <div class="col-md-6 two-grids-bottom-grid">
+                                            <div class="two-grids-bottom-grid-img">
+                                                <a href="single.html">Cras euismod tortor sit amet sem dapibus lacinia vel ut felis</a>
+                                                <a href="single.html"><img src="../../static/images/n3.jpg" alt="" /></a>
+                                            </div>
+                                            <div class="two-grids-bottom-grid-info">
+                                                <ul>
+                                                    <li><a href="single.html"><i class="fa fa-arrow-right"></i> Mauris ac vestibulum lectus</a></li>
+                                                    <li><a href="single.html"><i class="fa fa-arrow-right"></i> Nam condimentum tempor ex id tempor</a></li>
+                                                    <li><a href="single.html"><i class="fa fa-arrow-right"></i> Aenean tempus nunc non leo porta</a></li>
+                                                    <li><a href="single.html"><i class="fa fa-arrow-right"></i> Nam tincidunt dui vulputate ullamcorper</a></li>
+                                                    <li><a href="v_single.html"><i class="fa fa-play-circle-o"></i> Duis lacus enim, fermentum sit amet</a></li>
+                                                    <li><a href="v_single.html"><i class="fa fa-play-circle-o"></i> Donec vitae est vitae mi consectetur</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 two-grids-bottom-grid">
+                                            <div class="two-grids-bottom-grid-img">
+                                                <a href="single.html">Donec vitae est vitae mi consectetur molestie at ac ex</a>
+                                                <a href="single.html"><img src../../static/images/n3.jpg" alt="" /></a>
+                                            </div>
+                                            <div class="two-grids-bottom-grid-info">
+                                                <ul>
+                                                    <li><a href="single.html"><i class="fa fa-arrow-right"></i> Mauris ac vestibulum lectus</a></li>
+                                                    <li><a href="single.html"><i class="fa fa-arrow-right"></i> Nam condimentum tempor ex id tempor</a></li>
+                                                    <li><a href="single.html"><i class="fa fa-arrow-right"></i> Nam tincidunt dui vulputate ullamcorper</a></li>
+                                                    <li><a href="v_single.html"><i class="fa fa-play-circle-o"></i> Duis lacus enim, fermentum sit amet</a></li>
+                                                    <li><a href="v_single.html"><i class="fa fa-play-circle-o"></i> Donec vitae est vitae mi consectetur</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                    <div class="two-grids-bottom-grids">
+                                        <div class="col-md-6 two-grids-bottom-grid">
+                                            <div class="two-grids-bottom-grid-img">
+                                                <a href="single.html">Proin urna mauris, consequat quis nisl non tincidunt pharetra</a>
+                                                <a href="single.html"><img src="../../static/images/n3.jpg" alt="" /></a>
+                                            </div>
+                                            <div class="two-grids-bottom-grid-info">
+                                                <ul>
+                                                    <li><a href="single.html"><i class="fa fa-arrow-right"></i> Mauris ac vestibulum lectus</a></li>
+                                                    <li><a href="single.html"><i class="fa fa-arrow-right"></i> Aenean tempus nunc non leo porta</a></li>
+                                                    <li><a href="single.html"><i class="fa fa-arrow-right"></i> Nam tincidunt dui vulputate ullamcorper</a></li>
+                                                    <li><a href="v_single.html"><i class="fa fa-play-circle-o"></i> Duis lacus enim, fermentum sit amet</a></li>
+                                                    <li><a href="v_single.html"><i class="fa fa-play-circle-o"></i> Donec vitae est vitae mi consectetur</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 two-grids-bottom-grid">
+                                            <div class="two-grids-bottom-grid-img">
+                                                <a href="single.html">Nunc metus neque, placerat at sapien eget, tempor</a>
+                                                <a href="single.html"><img src="../../static/images/n3.jpg" alt="" /></a>
+                                            </div>
+                                            <div class="two-grids-bottom-grid-info">
+                                                <ul>
+                                                    <li><a href="single.html"><i class="fa fa-arrow-right"></i> Mauris ac vestibulum lectus</a></li>
+                                                    <li><a href="single.html"><i class="fa fa-arrow-right"></i> Nam condimentum tempor ex id tempor</a></li>
+                                                    <li><a href="v_single.html"><i class="fa fa-play-circle-o"></i> Donec vitae est vitae mi consectetur</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </div>
+                                <!-- two-grids-bottom -->
+                                <!-- more-news -->
+                                <div class="more-news">
+                                    <div class="more-news-heading">
+                                        <h3>更多新闻</h3>
+                                    </div>
+                                    <div class="more-news-grids">
+                                        <div class="col-md-6 more-news-left">
+                                            <div class="news-grids-bottom">
+                                                <!-- date -->
+                                                <div id="design" class="date">
+                                                    <div id="cycler">
+                                                        <div class="date-text">
+                                                            <h4>Premier League</h4>
+                                                            <ul>
+                                                                <li><a href="single.html"><i class="fa fa-arrow-right"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                                                <li><a href="V_single.html"><i class="fa fa-play-circle-o"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="date-text">
+                                                            <h4>Championship</h4>
+                                                            <ul>
+                                                                <li><a href="single.html"><i class="fa fa-arrow-right"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                                                <li><a href="V_single.html"><i class="fa fa-play-circle-o"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                                                <li><a href="V_single.html"><i class="fa fa-play-circle-o"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="date-text">
+                                                            <h4>FA Cup</h4>
+                                                            <ul>
+                                                                <li><a href="single.html"><i class="fa fa-arrow-right"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                                                <li><a href="V_single.html"><i class="fa fa-play-circle-o"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="date-text">
+                                                            <h4>Champions League</h4>
+                                                            <ul>
+                                                                <li><a href="V_single.html"><i class="fa fa-play-circle-o"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="date-text">
+                                                            <h4>Champions League</h4>
+                                                            <ul>
+                                                                <li><a href="single.html"><i class="fa fa-arrow-right"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        function cycle($item, $cycler){
+                                                            setTimeout(cycle, 2000, $item.next(), $cycler);
+
+                                                            $item.slideUp(1000,function(){
+                                                                $item.appendTo($cycler).show();
+                                                            });
+
+                                                        }
+                                                        cycle($('#cycler div:first'),  $('#cycler'));
+                                                    </script>
+                                                </div>
+                                                <!-- //date -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 more-news-left">
+                                            <div class="more-news-left-heading">
+                                                <h4>June 09,2015</h4>
+                                            </div>
+                                            <div class="news-right-grids">
+                                                <div class="news-right-grids-img">
+                                                    <a href="single.html"><img src="../../static/images/n3.jpg" alt="" /></a>
+                                                </div>
+                                                <div class="news-right-grids-info">
+                                                    <a href="single.html">Scottish Cup</a>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+                                                <div class="clearfix"> </div>
+                                            </div>
+                                            <div class="news-right-grids">
+                                                <div class="news-right-grids-img">
+                                                    <a href="single.html"><img src="../../static/images/n3.jpg" alt="" /></a>
+                                                </div>
+                                                <div class="news-right-grids-info">
+                                                    <a href="single.html">League Cup</a>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+                                                <div class="clearfix"> </div>
+                                            </div>
+                                            <div class="more-news-left-heading">
+                                                <h4></h4>
+                                            </div>
+                                            <div class="news-right-grids">
+                                                <div class="news-right-grids-img">
+                                                    <a href="single.html"><img src="../../static/images/n3.jpg" alt="" /></a>
+                                                </div>
+                                                <div class="news-right-grids-info">
+                                                    <a href="single.html">Welsh Basketball</a>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+                                                <div class="clearfix"> </div>
+                                            </div>
+                                            <div class="more-news-left-heading">
+                                                <h4>August 01,2015</h4>
+                                            </div>
+                                            <div class="news-right-grids">
+                                                <div class="news-right-grids-img">
+                                                    <a href="single.html"><img src="../../static/images/n3.jpg" alt="" /></a>
+                                                </div>
+                                                <div class="news-right-grids-info">
+                                                    <a href="single.html">National League</a>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+                                                <div class="clearfix"> </div>
+                                            </div>
+                                            <div class="more-news-left-heading">
+                                                <h4>September 24,2015</h4>
+                                            </div>
+                                            <div class="news-right-grids n-right-grids">
+                                                <div class="news-right-grids-img">
+                                                    <a href="single.html"><img src="../../static/images/n3.jpg" alt="" /></a>
+                                                </div>
+                                                <div class="news-right-grids-info">
+                                                    <a href="single.html">Women's Basketball</a>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+                                                <div class="clearfix"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </div>
+                                <!-- //more-news -->
+                            </div>
+                            <!-- top-grid-left-right -->
+                            <div class="col-md-4 top-grid-left-right">
+                                <div class="top-news features">
+                                    <div class="top-news-heading">
+                                        <h3>娱乐时尚</h3>
+                                    </div>
+                                    <div class="top-news-grids">
+                                        <div class="top-news-grid">
+                                            <div class="top-news-grid-heading">
+                                                <a href="single.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rutrum ac nulla</a>
+                                            </div>
+                                            <div class="t-grid basket-t-head">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-clock-o"></i> 1h</a></li>
+                                                    <li><a href="#"><i class="fa fa-user"></i> Vivamus nibh</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="top-news-grid">
+                                            <div class="top-news-grid-heading">
+                                                <a href="single.html">Duis orci enim, rutrum vel sodales ut, tincidunt nec turpis.</a>
+                                            </div>
+                                            <div class="t-grid basket-t-head">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-clock-o"></i> 3h</a></li>
+                                                    <li><a href="#"><i class="fa fa-user"></i> Cras pretium</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="top-news-grid">
+                                            <div class="top-news-grid-heading">
+                                                <a href="single.html">Sed leo leo, porta vel commodo in, vulputate eu est. In rhoncus tempor dictum. </a>
+                                            </div>
+                                            <div class="t-grid basket-t-head">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-clock-o"></i> 4h</a></li>
+                                                    <li><a href="#"><i class="fa fa-user"></i> Aenean rutrum</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="top-grid-left-right-grid">
+                                    <div class="top-grid-left-right-img">
+                                        <a href="single.html"><img src="../../static/images/n4.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="top-grid-left-right-info">
+                                        <a class="text" href="single.html">Phasellus ligula lectus</a>
+                                        <p>Nam id sollicitudin felis. Nulla non bibendum arcu.Suspendisse venenatis venenatis mi, et cursus risus vehicula non.</p>
+                                        <div class="t-grid right-info-t-grid basket-t-head">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-clock-o"></i> 4h</a></li>
+                                                <li><a href="#"><i class="fa fa-user"></i> Quisque massa</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="top-grid-left-right-grid">
+                                    <div class="top-grid-left-right-top">
+                                        <a href="single.html">Maecenas ut molestie neque, eget faucibus turpis</a>
+                                        <p>Nunc accumsan neque id massa molestie, ac semper quam maximus.Maecenas suscipit, ipsum vel condimentum</p>
+                                    </div>
+                                    <div class="top-grid-left-right-img">
+                                        <a href="single.html"><img src="../../static/images/n4.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="top-grid-left-right-info">
+                                        <a class="text" href="single.html">Lorem ipsum dolor sit amet</a>
+                                        <p>Nam id sollicitudin felis. Nulla non bibendum arcu.Suspendisse venenatis venenatis mi, et cursus risus vehicula non.</p>
+                                        <div class="t-grid right-info-t-grid basket-t-head">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-clock-o"></i> 4h</a></li>
+                                                <li><a href="#"><i class="fa fa-user"></i> Ornare Congue</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="top-grid-left-right-grid">
+                                    <div class="top-grid-left-right-top">
+                                        <a href="single.html">Maecenas ut molestie neque, eget faucibus turpis</a>
+                                        <p>Nunc accumsan neque id massa molestie, ac semper quam maximus.Maecenas suscipit, ipsum vel condimentum</p>
+                                    </div>
+                                    <div class="top-grid-left-right-img">
+                                        <a href="single.html"><img src="../../static/images/n4.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="top-grid-left-right-info">
+                                        <a class="text" href="single.html">Donec sodales consectetur ex, in euismod odio pharetra eget</a>
+                                        <p>Nam id sollicitudin felis. Nulla non bibendum arcu.Suspendisse venenatis venenatis mi, et cursus risus vehicula non.</p>
+                                        <div class="t-grid right-info-t-grid basket-t-head">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-clock-o"></i> 4h</a></li>
+                                                <li><a href="#"><i class="fa fa-user"></i> Sed leo leo</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="top-grid-left-right-grid">
+                                    <div class="top-grid-left-right-top">
+                                        <a href="single.html">Maecenas ut molestie neque, eget faucibus turpis</a>
+                                        <p>Nunc accumsan neque id massa molestie, ac semper quam maximus.Maecenas suscipit, ipsum vel condimentum</p>
+                                    </div>
+                                    <div class="top-grid-left-right-img">
+                                        <a href="single.html"><img src="../../static/images/n4.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="top-grid-left-right-info">
+                                        <a class="text" href="single.html">Donec sodales consectetur ex, in euismod odio pharetra eget</a>
+                                        <p>Nam id sollicitudin felis. Nulla non bibendum arcu.Suspendisse venenatis venenatis mi, et cursus risus vehicula non.</p>
+                                        <div class="t-grid right-info-t-grid basket-t-head">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-clock-o"></i> 7h</a></li>
+                                                <li><a href="#"><i class="fa fa-user"></i> Donec sodales</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- top-grid-left-right -->
+                            <div class="clearfix"> </div>
+                        </div>
+                        <!-- //top-big-grids -->
+                    </div>
+                    <!-- //top-grid-left -->
+                    <div class="clearfix"> </div>
+                </div>
+                <!-- more-sports -->
+                <!--   <div class="more-sports">
+                       <div class="more-sports-heading">
+                       <h3>More Information</h3>
+                   </div>
+                       <div class="more-sports-grids">
+                           <div class="col-md-3 more-sports-grid">
+                               <div class="more-grids">
+                                   <div class="col-md-6 more-grid-left">
+                                       <a href="index.html"><img src="images/n3.jpg" alt="" /></a>
+                                   </div>
+                                   <div class="col-md-6 more-grid-right">
+                                       <div class="more-grid-right-top">
+                                           <a href="index.html">Lorem ipsum dolor sit amet</a>
+                                       </div>
+                                       <div class="more-grid-right-bottom">
+                                           <a href="index.html">Football</a>
+                                       </div>
+                                   </div>
+                                   <div class="clearfix"> </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3 more-sports-grid">
+                               <div class="more-grids">
+                                   <div class="col-md-6 more-grid-left">
+                                       <a href="baseball.html"><img src="images/n3.jpg" alt="" /></a>
+                                   </div>
+                                   <div class="col-md-6 more-grid-right">
+                                       <div class="more-grid-right-top">
+                                           <a href="baseball.html">Quisque tristique dignissim</a>
+                                       </div>
+                                       <div class="more-grid-right-bottom">
+                                           <a href="baseball.html">Baseball</a>
+                                       </div>
+                                   </div>
+                                   <div class="clearfix"> </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3 more-sports-grid">
+                               <div class="more-grids">
+                                   <div class="col-md-6 more-grid-left">
+                                       <a href="basketball.html"><img src="images/n3.jpg" alt="" /></a>
+                                   </div>
+                                   <div class="col-md-6 more-grid-right">
+                                       <div class="more-grid-right-top">
+                                           <a href="basketball.html">Morbi tincidunt urna condimentum</a>
+                                       </div>
+                                       <div class="more-grid-right-bottom">
+                                           <a href="basketball.html">Basketball</a>
+                                       </div>
+                                   </div>
+                                   <div class="clearfix"> </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3 more-sports-grid">
+                               <div class="more-grids">
+                                   <div class="col-md-6 more-grid-left">
+                                       <a href="horse_Racing.html"><img src="images/n3.jpg" alt="" /></a>
+                                   </div>
+                                   <div class="col-md-6 more-grid-right">
+                                       <div class="more-grid-right-top">
+                                           <a href="horse_Racing.html">Suspendisse viverra vestibulum</a>
+                                       </div>
+                                       <div class="more-grid-right-bottom">
+                                           <a href="horse_Racing.html">Horse Racing</a>
+                                       </div>
+                                   </div>
+                                   <div class="clearfix"> </div>
+                               </div>
+                           </div>
+                           <div class="clearfix"> </div>
+                       </div>
+                       <div class="more-sports-grids more-sports-grids-bottom">
+                           <div class="col-md-3 more-sports-grid">
+                               <div class="more-grids">
+                                   <div class="col-md-6 more-grid-left">
+                                       <a href="golf.html"><img src="images/n3.jpg" alt="" /></a>
+                                   </div>
+                                   <div class="col-md-6 more-grid-right">
+                                       <div class="more-grid-right-top">
+                                           <a href="golf.html">Nullam nec eros ac purus luctus</a>
+                                       </div>
+                                       <div class="more-grid-right-bottom">
+                                           <a href="golf.html">Golf</a>
+                                       </div>
+                                   </div>
+                                   <div class="clearfix"> </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3 more-sports-grid">
+                               <div class="more-grids">
+                                   <div class="col-md-6 more-grid-left">
+                                       <a href="tennis.html"><img src="images/n3.jpg" alt="" /></a>
+                                   </div>
+                                   <div class="col-md-6 more-grid-right">
+                                       <div class="more-grid-right-top">
+                                           <a href="tennis.html">Vivamus quis magna ornare</a>
+                                       </div>
+                                       <div class="more-grid-right-bottom">
+                                           <a href="tennis.html">Tennis</a>
+                                       </div>
+                                   </div>
+                                   <div class="clearfix"> </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3 more-sports-grid">
+                               <div class="more-grids">
+                                   <div class="col-md-6 more-grid-left">
+                                       <a href="#"><img src="images/n3.jpg" alt="" /></a>
+                                   </div>
+                                   <div class="col-md-6 more-grid-right">
+                                       <div class="more-grid-right-top">
+                                           <a href="#">Lorem ipsum dolor sit amet</a>
+                                       </div>
+                                       <div class="more-grid-right-bottom">
+                                           <a href="#">Rugby</a>
+                                       </div>
+                                   </div>
+                                   <div class="clearfix"> </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3 more-sports-grid">
+                               <div class="more-grids">
+                                   <div class="col-md-6 more-grid-left">
+                                       <a href="#"><img src="images/n3.jpg" alt="" /></a>
+                                   </div>
+                                   <div class="col-md-6 more-grid-right">
+                                       <div class="more-grid-right-top">
+                                           <a href="#">Cras porta, orci vitae pellentesque</a>
+                                       </div>
+                                       <div class="more-grid-right-bottom">
+                                           <a href="#">Cricket</a>
+                                       </div>
+                                   </div>
+                                   <div class="clearfix"> </div>
+                               </div>
+                           </div>
+                           <div class="clearfix"> </div>
+                       </div>
+                   </div>-->
+                <!-- //more-sports -->
+            </div>
+        </div>
+        <!-- Modal -->
+        <!-- //	Modal -->
+        <!--footer section start-->
+
+        <footer>
+            <div class="footer-left">
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <!--<li><a href="#"  data-toggle="modal" data-target="#myModal">Feedback</a></li>-->
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="text-align: center;padding-top: 40px">Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/"></a></p>
+            </div>
+            <div class="social">
+                <ul>
+                   <!-- <li><a href="#"><i class="fa fa"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="#"><i class="fa fa-vk"></i></a></li>-->
+                </ul>
+            </div>
+         <!--   <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        &lt;!&ndash; <div class="modal-header">
+                             </div>&ndash;&gt;
+                        <div class="modal-body">
+                            <div class="login-top">
+                                <h1>登  录</h1>
+                                <form>
+                                    <input type="text" value="User Id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Id';}">
+                                    <input type="password" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}">
+                                </form>
+                                <div class="forgot">
+                                    <a href="#">忘记密码？</a>
+                                    <input type="submit" value="登录" data-dismiss="modal" id="login">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-bottom">
+                        <h3>新用户在这里&nbsp;<a href="#">注册</a>&nbsp</h3>
+                    </div>&lt;!&ndash; /.modal-content &ndash;&gt;
+                </div>
+            </div>-->
+        </footer>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+             aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- <div class="modal-header">
+                         </div>-->
+                    <div class="modal-body">
+                        <div class="login-top">
+                            <h1>登  录</h1>
+                            <form>
+                                <input type="text" value="User Id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Id';}">
+                                <input type="password" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}">
+                            </form>
+                            <div class="forgot">
+                                <a href="#">忘记密码？</a>
+                                <input type="submit" value="登录" data-dismiss="modal" id="login">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-bottom">
+                    <h3>新用户在这里&nbsp;<a href="#">注册</a>&nbsp</h3>
+                </div><!-- /.modal-content -->
+            </div>
+        </div>
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Owl carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- Waypoints -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Magnific Popup -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <!-- Main JS -->
+        <script src="js/main.js"></script>
+        <!--footer section end-->
+    </div>
+
+
+    <!-- main content end-->
+</section>
+</body>
+</html>

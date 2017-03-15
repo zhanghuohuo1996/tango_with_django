@@ -1,0 +1,943 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Gayest</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Webfonts -->
+	<link href='http://fonts.useso.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../../static/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../../static/css/icomoon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="../../static/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../../static/css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="../../static/css/magnific-popup.css">
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="../../static/css/style.css">
+        <link rel="stylesheet" href="../../static/css/style2.css">
+
+        <link rel="stylesheet" href="../../static/css/set1.css">
+	<!-- Modernizr JS -->
+	<script src="../../static/js/modernizr-2.6.2.min.js"></script>
+	<script>
+	 function test(username){
+/*var url="dianzan";//后台接收处理
+var txtContent= "编辑器里的内容";//编辑器里的内容
+ var objData = username;//post方式传送的数据
+    $.ajax({
+        url: url
+        , data: objData
+        , dataType: 'json'
+        , type: 'POST'
+        , success: function (data) {
+            if (data.Result == 'success') {
+             alert("操作成功");
+            }
+            else 
+            {
+              alert("操作失败");
+             }
+        }
+        , error: function (msg) {
+         alert(msg);
+    
+        }
+		
+    });*/
+	
+	}
+	</script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+        <script type="text/javascript" src="../../static/js/jquery-1.11.3.min.js"></script>
+        <script>
+           $(function(){
+                /*$("#login").click(function(){
+                    var newnode=document.createElement("li");
+                    var hhh=document.getElementById("spanlog");
+                    hhh.innerHTML="David的空间";
+                    var oldnode=document.getElementById("oldlog");
+                    newnode.innerHTML=oldnode.innerHTML;
+                    oldnode.parentNode.replaceChild(newnode,oldnode);
+                })*/		
+				var ok1=false;				
+				$("#email").blur(function(){
+				ok1=false;
+				var email=document.getElementById('email').value;
+				var reg=/[a-zA-Z0-9]{1,10}@[a-zA-Z0-9]{1,5}\.[a-zA-Z0-9]{1,5}/;
+				if(reg.test(email))
+				{ok1=true;}
+				else{alert("no");}
+				})
+				/*$("#email").onblur=function(){
+				ok1=false;
+				var email=document.getElementById('email').value;
+				var reg=/[a-zA-Z0-9]{1,10}@[a-zA-Z0-9]{1,5}\.[a-zA-Z0-9]{1,5}/;
+				if(reg.test(email))
+				{ok1=true;}
+				else{alert("no");}
+				}*/
+				$("#advice-submit").click(function(){
+				if(ok1)
+				{$("#advice-form").submit();}
+				else{
+				alert("please input correctly!");
+				return false;
+				}
+				})
+            }); 
+            $(document).ready(function(){
+
+                // hide #back-top first
+                $("#back-top").hide();
+
+                // fade in #back-top
+                $(function () {
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 100) {
+                            $('#back-top').fadeIn();
+
+                        } else {
+                            $('#back-top').fadeOut();
+
+                        }
+                    });
+
+                    // scroll body to 0px on click
+                    $('#back-top1').click(function () {
+                        $('body,html').animate({
+                            scrollTop: 0
+                        }, 800);
+                        return false;
+                    });
+                    $('#back-news').click(function () {
+                    });
+                    $('#chat').click(function () {
+                    });
+
+                });
+
+            });
+        </script>
+        <style>/*
+Back to top button
+*/
+        /*--contact--*/
+        .contact_page{
+            padding: 5em 0em;
+            text-align: center;
+            background: #272727;
+        }
+        .contact_page h3{
+            color: #FFFFFF;
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+        .contact_form {
+            text-align: left;
+        }
+        .contact_form textarea {
+            width: 100%;
+            resize: none;
+            height: 200px;
+            padding: 7px;
+            margin-bottom: 15px;
+            outline: none;
+            font-family: 'Oswald', sans-serif;
+            font-size: 15px;
+            background-color: #272727;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+        input.name,input.nuber,input.mail{
+            width: 100%;
+            padding: 7px;
+            font-size: 15px;
+            outline: none;
+            margin-bottom: 15px;
+            background-color: #272727;
+            border: none;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 300;
+        }
+        .mrgn-can{
+            border: 1px solid #fff;
+            border-bottom: 1px solid #fff!important;
+            color: #fff !important;
+            background-color: #272727 !important;
+            border-radius: 0 !important;
+            text-transform: capitalize;
+            outline: none !important;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 300;
+        }
+        .btn-info,.btn-info:hover{
+            border-color: #fff;
+        }
+        .mrgn-can:hover{
+            background: #fff !important;
+            color: #272727 !important;
+            transition: 0.5s all;
+            outline: none !important;
+        }
+        .map iframe {
+            width: 100%;
+            height: 400px;
+        }
+        #back-top  {
+            position: fixed;
+            bottom: 30px;
+            margin-left: -150px;
+        }
+        #back-top  a {
+            width: 50px;
+            display: block;
+            text-align: center;
+            font: 11px/100% Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #bbb;
+            /* background color transition */
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            transition: 1s;
+        }
+        #back-top  a:hover {
+            color: #000;
+        }
+        /* arrow icon (span tag) */
+        #back-top span {
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin-bottom: 2px;
+            background: #ddd url(../../static/images/up-arrow.png) no-repeat center center;
+            /* rounded corners */
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+            /* background color transition */
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            transition: 1s;
+        }
+        #back-news span
+        {
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin-bottom: 2px;
+            background: #ddd url(../../static/images/back-news.png) no-repeat center center;
+            /* rounded corners */
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+            /* background color transition */
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            transition: 1s;
+        }
+        #chat span
+        {
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin-bottom: 2px;
+            background: #ddd url(../../static/images/chat.png) no-repeat center center;
+            /* rounded corners */
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+            /* background color transition */
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            transition: 1s;
+        }
+        #back-top  a:hover span {
+            background-color: #777;
+        }
+		.icon-links span{color:red}</style>
+
+	</head>
+	<body id="top">
+	<header id="fh5co-header" role="banner">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header"> 
+				<!-- Mobile Toggle Menu Button -->
+				<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+				<a class="navbar-brand" href="index.html">Gayest</a>
+				</div>
+				<div id="fh5co-navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html"><span>首页 <span class="border"></span></span></a></li>
+						{% if state %}
+						<li><a href="dating.html"><span>交友<span class="border"></span></span></a></li>
+						{% else %}
+						<li><a href="login.html"><span>交友<span class="border"></span></span></a></li>
+						{% endif %}
+						<li><a href="news.html"><span>新闻<span class="border"></span></span></a></li>
+						<li><a href="party.html"><span>爬梯 <span class="border"></span></span></a></li>
+						{% if state %}
+						<li><a class="turnred" href="" data-target="#myModal" data-toggle="modal"><span id="a" > {{username}} 的空间</span></a></li>
+						{% else %}
+                        <li class="call-to-action" id="oldlog"><a class="turnred" href="" data-target="#myModal" data-toggle="modal"><span id="spanlog">登录</span></a></li>
+                        {% endif %}
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- END .header -->
+	<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >Gayest</a></div>
+	<div class="fh5co-slider">
+		<div class="owl-carousel owl-carousel-fullwidth">
+		    <div class="item" style="background-image:url(../../static/images/01.jpg)">
+		    	<div class="fh5co-overlay"></div>
+		    	<div class="container">
+		    		<div class="row">
+		    			<div class="col-md-8 col-md-offset-2">
+			    			<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text text-center to-animate">
+						    		<h1 class="fh5co-lead"><a href="" target="_blank" title="类似爱情" >类似爱情</a></h1>
+									<h2 class="fh5co-sub-lead"> -----当你告诉我这不是爱情的时候，我会心疼，我会难过，这种感觉让我明白，爱情它来了。</a></h2>
+						    	</div>
+						    </div>
+					    </div>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="item" style="background-image:url(../../static/images/06.jpg)">
+		    	<div class="fh5co-overlay"></div>
+		    	<div class="container">
+		    		<div class="row">
+		    			<div class="col-md-8 col-md-offset-2">
+			    			<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text text-center to-animate">
+						    		<h1 class="fh5co-lead"><a href="" target="_blank" title="我的爱情只和你有关">我的爱情只和你有关</a></h1>
+									<h2 class="fh5co-sub-lead"> -----爱情就是:当感觉、热情和浪漫统统拿掉之后，彼此依然珍惜对方。</a></h2>
+						    	</div>
+						    </div>
+					    </div>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="item" style="background-image:url(../../static/images/05.jpg)">
+		    	<div class="fh5co-overlay"></div>
+		    	<div class="container">
+		    		<div class="row">
+		    			<div class="col-md-8 col-md-offset-2">
+			    			<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text text-center to-animate">
+						    		<h1 class="fh5co-lead"><a href="" target="_blank" title="基友">基友</a></h1>
+									<h2 class="fh5co-sub-lead">-----基友就是一起吃肯德基的朋友，炮友就是一起吃泡面的朋友。前者注重交流，后者注重效率。</h2>
+						    	</div>
+						    </div>
+					    </div>
+		    		</div>
+		    	</div>
+		    </div>
+            <div class="item" style="background-image:url(../../static/images/04.jpg)">
+                <div class="fh5co-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="fh5co-owl-text-wrap">
+                                <div class="fh5co-owl-text text-center to-animate">
+                                    <h1 class="fh5co-lead"><a href="" target="_blank" title="我爱你">我爱你</a></h1>
+                                    <h2 class="fh5co-sub-lead">-----大学四年，我们从没讲过彼此的心意，可我知道，那晚你趁我睡着时偷偷说了一句我爱你。</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	</div>	
+	<div id="fh5co-main">
+		<!-- Features -->
+
+		<div id="fh5co-features">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-8 col-md-offset-2">
+						<h2 class="fh5co-section-lead">Welcome to the PARTY</h2>
+						<h3 class="fh5co-section-sub-lead"> <small>每个人的青春里，都应该有这样一次约会，当然你也不例外。这里有你的真命天子，有你的挚友，有鲜花和啤酒，你怎么舍得错过这样的大爬梯？</small></h3>
+					</div>
+					<div class="fh5co-spacer fh5co-spacer-md"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6 no-border">
+						<div class="fh5co-feature no-border">
+							<div class="fh5co-feature-icon to-animate">
+								<i ><img src="../../static/images/L02.jpg" class="little-image"></i>
+							</div>
+							<div class="fh5co-feature-text">
+								<h3><strong>黑夜杀手</strong></h3>
+								<p>时间：2016年06月05日20:00||地点：银河SOHO</p>
+								<p><a href="subparty.html?id=0">Read more</a></p>
+							</div>
+						</div>
+						<div class="fh5co-feature no-border">
+							<div class="fh5co-feature-icon to-animate">
+								<i><img src="../../static/images/L01.jpg" class="little-image"></i>
+							</div>
+							<div class="fh5co-feature-text">
+								<h3><strong>无间道</strong></h3>
+								<p>时间：本周日18:00||地点：双井</p>
+								<p><a href="subparty.html?id=1">Read more</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+						<div class="fh5co-feature no-border">
+							<div class="fh5co-feature-icon to-animate">
+								<i><img src="../../static/images/L03.jpg" class="little-image"></i>
+							</div>
+							<div class="fh5co-feature-text">
+								<h3><strong>KTV</strong></h3>
+								<p>时间：06月30日22:00||地点：国贸</p>
+								<p><a href="subparty.html?id=2">Read more</a></p>
+							</div>
+						</div>
+						<div class="fh5co-feature no-border">
+							<div class="fh5co-feature-icon to-animate">
+								<i><img src="../../static/images/L04.jpg" class="little-image"></i>
+							</div>
+							<div class="fh5co-feature-text">
+								<h3><strong>搓麻</strong></h3>
+								<p>时间：06月25日18:00||地点：朝阳门南小街</p>
+								<p><a href="subparty.html?id=3">Read more</a></p>
+							</div>
+						</div>
+					</div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="fh5co-feature no-border">
+                            <div class="fh5co-feature-icon to-animate">
+                                <i><img src="../../static/images/L05.jpg" class="little-image"></i>
+                            </div>
+                            <div class="fh5co-feature-text">
+                                <h3><strong>KTV</strong></h3>
+                                <p>时间：06月30日22:00||地点：国贸</p>
+                                <p><a href="subparty.html?id=4">Read more</a></p>
+                            </div>
+                        </div>
+                        <div class="fh5co-feature no-border">
+                            <div class="fh5co-feature-icon to-animate">
+                                <i><img src="../../static/images/L06.jpg" class="little-image"></i>
+                            </div>
+                            <div class="fh5co-feature-text">
+                                <h3><strong>搓麻</strong></h3>
+                                <p>时间：06月25日18:00||地点：朝阳门南小街</p>
+                                <p><a href="subparty.html?id=5">Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="fh5co-feature no-border">
+                            <div class="fh5co-feature-icon to-animate">
+                                <i><img src="../../static/images/L06.jpg" class="little-image"></i>
+                            </div>
+                            <div class="fh5co-feature-text">
+                                <h3><strong>KTV</strong></h3>
+                                <p>时间：06月30日22:00||地点：国贸</p>
+                                <p><a href="subparty.html?id=6">Read more</a></p>
+                            </div>
+                        </div>
+                        <div class="fh5co-feature no-border">
+                            <div class="fh5co-feature-icon to-animate">
+                                <i><img src="../../static/images/L08.jpg" class="little-image"></i>
+                            </div>
+                            <div class="fh5co-feature-text">
+                                <h3><strong>搓麻</strong></h3>
+                                <p>时间：06月25日18:00||地点：朝阳门南小街</p>
+                                <p><a href="subparty.html?id=7">Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+                <div class="text-center" style="font-size: xx-small"><a href="party.html">关于更多爬梯...</a></div>
+			</div>
+		</div>
+		<!-- Features -->
+
+
+		<div class="fh5co-spacer fh5co-spacer-lg"></div>		
+		<!-- Products -->
+		<div class="container" id="fh5co-products">
+			<div class="row text-center">
+				<div class="col-md-8 col-md-offset-2">
+					<h2 class="fh5co-section-lead ">make friends here</h2>
+					<h3 class="fh5co-section-sub-lead "><small>两小无猜的两个少年,还有其它一些打打闹闹的男孩们,清秀得让人忽视了性别。金发过耳的金,精致的五官,清澈稚嫩的嗓音,漂亮的牙齿。欢迎来这里邂逅你错过的青春。</small> </h3>
+				</div>
+				<div class="fh5co-spacer fh5co-spacer-md"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+					<div class="fh5co-product grid">
+                        <figure class="effect-zoe">
+						<img onclick="test({{user1.name}})" src="../../static/images/p5.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                            <figcaption>
+                                <h2>{{user1.name}}</h2>
+                                <p class="icon-links">
+                                    <a><span class="icon-heart" onclick="test({{user1.name}})"></span></a>
+                                    <a href="#"><span class="icon-eye"></span></a>
+                                </p>
+                                <p class="description">性别：{{user1.sex}}||年龄：{{user1.age}}||地址：{{user1.address}}</p>
+                            </figcaption>
+                          <!--  <p><a href="#">Read more</a></p>-->
+                        </figure>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+					<div class="fh5co-product grid">
+                        <figure class="effect-zoe">
+						<img src="../../static/images/p2.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                            <figcaption>
+                                <h2>{{user2.name}}</h2>
+                                <p class="icon-links">
+                                    <a href="#"><span class="icon-heart"></span></a>
+                                    <a href="#"><span class="icon-eye"></span></a>
+                                   
+                                </p>
+                                <p class="description">性别：{{user2.sex}}||年龄：{{user2.age}}||地址：{{user2.address}}</p>
+                            </figcaption>
+                            </figure>
+					</div>
+				</div>
+				<div class="visible-sm-block visible-xs-block clearfix"></div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+					<div class="fh5co-product grid" >
+                        <figure class="effect-zoe">
+						<img src="../../static/images/p3.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                            <figcaption>
+                                <h2>{{user3.name}}</h2>
+                                <p class="icon-links">
+                                    <a href="#"><span class="icon-heart"></span></a>
+                                    <a href="#"><span class="icon-eye"></span></a>
+                                  
+                                </p>
+                                <p class="description">性别：{{user3.sex}}||年龄：{{user3.age}}||地址：{{user3.address}}</p>
+                            </figcaption>
+                            </figure>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+					<div class="fh5co-product grid">
+                        <figure class="effect-zoe">
+						<img src="../../static/images/p6.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                            <figcaption>
+                                <h2>{{user4.name}}</h2>
+                                <p class="icon-links">
+                                    <a href="#"><span class="icon-heart"></span></a>
+                                    <a href="#"><span class="icon-eye"></span></a>
+                                  
+                                </p>
+                                <p class="description">性别：{{user4.sex}}||年龄：{{user4.age}}||地址：{{user4.address}}</p>
+                            </figcaption>
+                        </figure>
+					</div>
+				</div>
+				
+			</div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                    <div class="fh5co-product grid">
+                        <figure class="effect-zoe">
+                            <img src="../../static/images/p10.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                            <figcaption>
+                                <h2>{{user5.name}}</h2>
+                                <p class="icon-links">
+                                    <a href="#"><span class="icon-heart"></span></a>
+                                    <a href="#"><span class="icon-eye"></span></a>
+                                
+                                </p>
+                                <p class="description">性别：{{user5.sex}}||年龄：{{user5.age}}||地址：{{user5.address}}</p>
+                            </figcaption>
+                            <!--  <p><a href="#">Read more</a></p>-->
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                    <div class="fh5co-product grid">
+                        <figure class="effect-zoe">
+                            <img src="../../static/images/p11.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                            <figcaption>
+                                <h2>{{user6.name}}</h2>
+                                <p class="icon-links">
+                                    <a href="#"><span class="icon-heart"></span></a>
+                                    <a href="#"><span class="icon-eye"></span></a>
+                                
+                                </p>
+                                <p class="description">性别：{{user6.sex}}||年龄：{{user6.age}}||地址：{{user6.address}}</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="visible-sm-block visible-xs-block clearfix"></div>
+                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                    <div class="fh5co-product grid" >
+                        <figure class="effect-zoe">
+                            <img src="../../static/images/p12.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                            <figcaption>
+                                <h2>{{user7.name}}</h2>
+                                <p class="icon-links">
+                                    <a href="#"><span class="icon-heart"></span></a>
+                                    <a href="#"><span class="icon-eye"></span></a>
+                                
+                                </p>
+                                <p class="description">性别：{{user7.sex}}||年龄：{{user7.age}}||地址：{{user7.address}}</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                    <div class="fh5co-product grid">
+                        <figure class="effect-zoe">
+                            <img src="../../static/images/p13.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                            <figcaption>
+                                <h2>{{user8.name}}</h2>
+                                <p class="icon-links">
+                                    <a href="#"><span class="icon-heart"></span></a>
+                                    <a href="#"><span class="icon-eye"></span></a>
+                                 
+                                </p>
+                                <p class="description">性别：{{user8.sex}}||年龄：{{user8.age}}||地址：{{user8.address}}</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                    <div class="fh5co-product grid">
+                        <figure class="effect-zoe">
+                            <img src="../../static/images/p14.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                            <figcaption>
+                                <h2>{{user9.name}}</h2>
+                                <p class="icon-links">
+                                    <a href="#"><span class="icon-heart"></span></a>
+                                    <a href="#"><span class="icon-eye"></span></a>
+                                  
+                                </p>
+                                <p class="description">性别：{{user9.sex}}||年龄：{{user9.age}}||地址：{{user9.address}}</p>
+                            </figcaption>
+                            <!--  <p><a href="#">Read more</a></p>-->
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                    <div class="fh5co-product grid">
+                        <figure class="effect-zoe">
+                            <img src="../../static/images/p15.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                            <figcaption>
+                                <h2>{{user10.name}}</h2>
+                                <p class="icon-links">
+                                    <a href="#"><span class="icon-heart"></span></a>
+                                    <a href="#"><span class="icon-eye"></span></a>
+                              
+                                </p>
+                                <p class="description">性别：{{user10.sex}}||年龄：{{user10.age}}||地址：{{user10.address}}</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="visible-sm-block visible-xs-block clearfix"></div>
+                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                    <div class="fh5co-product grid" >
+                        <figure class="effect-zoe">
+                            <img src="../../static/images/p16.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                            <figcaption>
+                                <h2>{{user11.name}}</h2>
+                                <p class="icon-links">
+                                    <a href="#"><span class="icon-heart"></span></a>
+                                    <a href="#"><span class="icon-eye"></span></a>
+                                
+                                </p>
+                                <p class="description">性别：{{user11.sex}}||年龄：{{user11.age}}||地址：{{user11.address}}</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                    <div class="fh5co-product grid">
+                        <figure class="effect-zoe">
+                            <img src="../../static/images/p17.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                            <figcaption>
+                                <h2>{{user12.name}}</h2>
+                                <p class="icon-links">
+                                    <a href="#"><span class="icon-heart"></span></a>
+                                    <a href="#"><span class="icon-eye"></span></a>
+                                 
+                                </p>
+                                <p class="description">性别：{{user12.sex}}||年龄：{{user12.age}}||地址：{{user12.address}}</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center" style="font-size: xx-small"><a href="dating.html">更多交友信息...</a></div>
+		</div>
+		<!-- Products -->
+		<div class="fh5co-spacer fh5co-spacer-lg"></div>
+
+		<div id="fh5co-clients">
+			<div class="container">
+				<div class="row">
+                  <!--  <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"></div>-->
+                    <div class="col-md-3  fh5co-client-logo text-center to-animate"><img src="../../static/images/logo.png" alt="FREEHTML5.co Free HTML5 Bootstrap Template" class="img-responsive"></div>
+
+                </div>
+			</div>
+		</div>
+
+		<div class="fh5co-bg-section" style="background-image: url(../../static/images/slide_2.jpg); background-attachment: fixed;">
+			<div class="fh5co-overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="fh5co-hero-wrap">
+							<div class="fh5co-hero-intro text-center">
+								<h1 class="fh5co-lead" style="font-size: x-large"><span class="quo">&ldquo;</span>社会进步的表现之一是，不再仅仅根据一个人的性取向、种族以及性别来定义一个人<span class="quo">&rdquo;</span></h1>
+								<p class="author">&mdash; <cite>库克</cite></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<footer id="fh5co-footer">
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="fh5co-footer-widget">
+						<h2 class="fh5co-footer-logo">Gayest</h2>
+						<p style="line-height: 5px">Gayest专注于为同志人群提供简便快捷的社交服务。</p>
+                        <p style="line-height: 5px">在这里你可以阅读新闻，注册交友，参加活动。</p>
+                        <p style="line-height: 5px">Gayest欢迎您的加入。</p>
+					</div>
+					<div class="fh5co-footer-widget">
+						<ul class="fh5co-social">
+							<li><a href="#"><i class="icon-sina-weibo"></i></a></li>
+							<li><a href="#"><i class="icon-phone"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-chat"></i></a></li>
+							<li><a href="#"><i class="icon-user"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6">
+					<div class="fh5co-footer-widget top-level">
+						<h4 class="fh5co-footer-lead " style="font-size: large"><strong>简介</strong></h4>
+						<ul>
+							<li><a href="contact.html">关于</a></li>
+							<li><a href="contact.html">联系</a></li>
+							<li><a href="contact.html">新闻</a></li>
+							<li><a href="contact.html">支持</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="visible-sm-block clearfix"></div>
+
+				<div class="col-md-2 col-sm-6">
+					<div class="fh5co-footer-widget top-level">
+						<h4 class="fh5co-footer-lead" style="font-size: large" ><strong>特色</strong></h4>
+						<ul class="fh5co-list-check">
+							<li><a href="#">GPS交友</a></li>
+							<li><a href="#">活动丰富</a></li>
+							<li><a href="#">个人空间</a></li>
+							<li><a href="#">主题新闻</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-6">
+                <div class="fh5co-footer-widget top-level">
+                    <h4 class="fh5co-footer-lead" style="font-size: large" ><strong>友情链接</strong></h4>
+                    <ul class="fh5co-list-check">
+                        <li><a href="http://www.danlan.org/">淡蓝网</a></li>
+                        <li><a href="https://www.blued.cn/v5/">blued</a></li>
+                        <li><a href="http://www.znak-life.com/">zank</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+			</div>
+
+			<div class="row fh5co-row-padded fh5co-copyright">
+				<div class="col-md-5">
+					<p><small>&copy; 最终解释权归Gayest所有|| <br> 详情登录<a href="http://www.cssmoban.com/" target="_blank" title="">Gayest官网</a>  </small></p>
+				</div>
+                <p id="back-top">
+                    <a id="back-top1" href="#top"><span></span></a>
+                    <a id="back-news" data-target="#myModal" data-toggle="modal"><span></span></a>
+                    <a id="chat" data-target="#mymodal1" data-toggle="modal"><span></span></a>
+                </p>
+			</div>
+
+
+		</div>
+        <div style="background-color: lightseagreen;width: 100%;height: 30px">
+            <div style="text-align: center">
+            <audio id="audiobg" controls autoplay loop>
+                <source src="bgmusic.mp3" type="audio/mpeg">
+            </audio>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+             aria-labelledby="myModalLabel" aria-hidden="true">
+            {% if state %}
+				<div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                            <div class="login-top">
+                                <h1>{{username}}处于登录状态</h1>
+                                <form action="logout-action">
+                                <input type="submit" value="退出当前账号" style="margin-left:170px"> 
+                                </form>
+                                <div class="forgot">
+                                   
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                            <div class="login-bottom">
+                                <h3><a href="#"></a></h3>
+                </div><!-- /.modal-content -->
+                </div>
+			{% else %}
+			<div class="modal-dialog">
+         <div class="modal-content">
+                    <!-- <div class="modal-header">
+                         </div>-->
+				<form action="check-action" method="post">
+				<div>
+                    <div class="modal-body">
+                        <div class="login-top">
+                            <h1>登  录</h1>							
+                                <input type="text" value="User Id" name="userName" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Id';}">
+                                <input type="password" value="password" name="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}">	
+						<div class="forgot">
+                                <a href="#">欢迎使用Gayest</a> 
+								<input type="submit" value="登录" id="login">	
+                            </div>
+                        </div>
+                    </div>
+					</div>
+				</form>
+          </div>
+				<div class="login-bottom">
+                    <h3>新用户在这里&nbsp;<a href="register.html">注册</a>&nbsp</h3>
+                </div>
+        </div>
+			
+			{% endif %}
+        
+            </div>
+
+       <!-- <div class="col-md-6 modal fade" id="mymodal1" tabindex="-1" role="dialog"  style="background-color: #272727;width: 50%;height:48%;left: 20%;top: 20%;vertical-align: 50%"
+             aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="contact_form">
+                <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Please input your advice here';}">Enter your text here...</textarea><br>
+                <form>
+                    <input class="name" type="text" name="name" value="Your name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"><br>
+
+                    <input class="nuber" type="text" name="Phone number" value="Phone Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Number';}"><br>
+
+                    <input class="mail" type="text" name="email" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}"><br>
+
+                    <button type="clear" class="btn btn-info mrgn-can">Clear</button>
+                    <button type="submit" class="btn btn-info mrgn-can">Submit</button>
+                </form>
+            </div>
+        </div>-->
+        <div class="modal fade" id="mymodal1" tabindex="-1" role="dialog"
+             aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- <div class="modal-header">
+                         </div>-->
+                    <div class="contact_page"   style="padding-left: 20px;padding-right: 20px">
+                        <div class="contact_form">
+                            <h1 style="color: #ffffff">CONTACT US</h1>
+                           
+                            <form id="advice-form" action="feedback-action" method="post">
+							 <textarea value="Message:" name="advice" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Please input your advice here';}">Enter your text here...</textarea><br>
+                                <input class="name" type="text" name="name" value="Your name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"><br>
+
+                                <input class="nuber" type="text" name="phoneNumber" value="Phone Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Number';}"><br>
+
+                                <input class="mail" type="text" name="email" id="email" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}"><br>
+
+                                <button type="clear" class="btn btn-info mrgn-can">Clear</button>
+                                <button class="btn btn-info mrgn-can" id="advice-submit" data-dismiss="modal fade">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+	</footer>
+
+
+	<!-- jQuery -->
+	<script src="../../static/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="../../static/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="../../static/js/bootstrap.min.js"></script>
+	<!-- Owl carousel -->
+	<script src="../../static/js/owl.carousel.min.js"></script>
+	<!-- Waypoints -->
+	<script src="../../static/js/jquery.waypoints.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="../../static/js/jquery.magnific-popup.min.js"></script>
+	<!-- Main JS -->
+	<script src="../../static/js/main.js"></script>
+
+
+	</div></body>
+</html>

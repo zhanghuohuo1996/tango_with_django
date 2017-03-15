@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>dating</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" href="../../static/css/set1.css">
+    <link rel="stylesheet" href="../../static/css/icomoon.css">
+    <link rel="stylesheet" href="../../static/css/animate.css">
+    <link rel="stylesheet" href="../../static/css/paginate.css">
+    <link rel="stylesheet" href="../../static/css/swipebox.css">
+<!--    <link rel="stylesheet" href="css/style4.css">-->
+    <link href="../../static/css/owl.carousel.min.css" rel="stylesheet">
+    <script type="text/javascript" src="../../static/js/jquery-1.11.3.min.js"></script>
+   <!-- <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />-->
+    <script src="../../static/js/bootstrap.min.js"></script>
+    <style>
+        /*-- footer --*/
+        footer {
+            background: #fff;
+            padding: 1em;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+        }
+        .footer-left {
+            text-align: center;
+        }
+        .footer-left ul {
+            padding:0;
+            margin:0;
+        }
+        .footer-left ul li{
+            display: inline-block;
+            border-right: solid 1px #B7B7B7;
+            padding: 0 .8em;
+            line-height: .7em;
+        }
+        .footer-left ul li:nth-child(5){
+            border:none;
+        }
+        .footer-left ul li a{
+            color: #B7B7B7;
+            font-size: .875em;
+            text-decoration: none;
+        }
+        .footer-left ul li a:hover{
+            color: #F44336;
+        }
+        .copyright{
+            text-align: center;
+            margin: 0em 0;
+        }
+        .copyright p{
+            color: #B7B7B7;
+            font-size: .875em;
+        }
+        .copyright p a{
+            color:#F44336;
+        }
+        .social{
+            text-align:center;
+        }
+        .social ul{
+            padding:0;
+            margin:0;
+        }
+        .social ul li{
+            display: inline-block;
+            margin: 0 1em;
+        }
+        .social ul li a{
+            color:#333;
+        }
+        .social ul li a i.fa.fa-facebook{
+            height: 30px;
+            width: 30px;
+            background: #FFF;
+            line-height: 30px;
+            border: solid 1px #FFFFFF;
+        }
+        .social ul li a i.fa.fa-facebook:hover {
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            color: #F44336;
+            border: solid 1px #F44336;
+            transition:0.5s all;
+            -webkit-transition:0.5s all;
+            -moz-transition:0.5s all;
+            -o-transition:0.5s all;
+            -ms-transition:0.5s all;
+        }
+        .social ul li a i.fa.fa-twitter{
+            height: 30px;
+            width: 30px;
+            background: #FFF;
+            line-height: 30px;
+            border: solid 1px #FFFFFF;
+        }
+        .social ul li a i.fa.fa-twitter:hover{
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            color: #F44336;
+            border: solid 1px #F44336;
+            transition:0.5s all;
+            -webkit-transition:0.5s all;
+            -moz-transition:0.5s all;
+            -o-transition:0.5s all;
+            -ms-transition:0.5s all;
+        }
+        .social ul li a i.fa.fa-rss{
+            height: 30px;
+            width: 30px;
+            background: #FFF;
+            line-height: 30px;
+            border: solid 1px #FFFFFF;
+        }
+        .social ul li a i.fa.fa-rss:hover{
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            color: #F44336;
+            border: solid 1px #F44336;
+            transition:0.5s all;
+            -webkit-transition:0.5s all;
+            -moz-transition:0.5s all;
+            -o-transition:0.5s all;
+            -ms-transition:0.5s all;
+        }
+        .social ul li a i.fa.fa-vk{
+            height: 30px;
+            width: 30px;
+            background: #FFF;
+            line-height: 30px;
+            border: solid 1px #FFFFFF;
+        }
+        .social ul li a i.fa.fa-vk:hover{
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            color: #F44336;
+            border: solid 1px #F44336;
+            transition:0.5s all;
+            -webkit-transition:0.5s all;
+            -moz-transition:0.5s all;
+            -o-transition:0.5s all;
+            -ms-transition:0.5s all;
+        }
+        /*-- //footer --*/
+    </style>
+    <style>
+        input[type=submit]{
+            position: absolute;
+            width: 21px;
+            background-size: 121px;
+            height: 26px;
+            border: none;
+            outline: none;
+            border-radius: 0px 3px 3px 0px;
+            top: 0px;
+            margin-top: 1px;
+        }
+        input.textbox {
+            width: 50%;
+            outline: none;
+            padding: 7px;
+            height: 26px;
+            border: none;
+            font-size: 13px;
+            background-color: #FFAD11;
+            color:#fff;
+            border-radius: 3px 0px 0px 3px;
+            font-family: 'Hind', sans-serif;
+        }
+        input.textbox:focus {
+            width: 80%;
+            transition:0.5s all;
+        }
+
+        ul.form_acess {
+            float: right;
+            margin:22px 0px;
+            position: relative;
+        }
+        form.re-disgn1{
+            margin:0;
+            display: inline-block;
+        }
+        .bg{background-color: #000000;width:500px;height: 200px;opacity: 0.7;border-radius: 5% }
+        .controllayer{background-color: #000000;width: 100%;opacity: 0.8}
+    </style>
+    <script src="../../static/js/jquery.paginate.js" type="text/javascript"></script>
+   <!-- <link href="css/style4.css" rel="stylesheet">-->
+    <script>
+		function getQueryString(name) {
+			var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+			var r = window.location.search.substr(1).match(reg);
+			if (r != null) {
+				return unescape(r[2]);
+			}
+			return null;
+		}
+		
+        $(function(){
+            /*var newnode=document.createElement("li");
+            var hhh=document.getElementById("spanlog");
+            hhh.innerHTML="David的空间";
+            var oldnode=document.getElementById("oldlog");
+            newnode.innerHTML=oldnode.innerHTML;
+            oldnode.parentNode.replaceChild(newnode,oldnode);*/
+			var list={{like_list|safe}};
+			for(var i=0;i<list.length;i++)
+			{
+			var a =list[i][1];
+			$("#"+a).css('color','red');
+			}
+		    //alert(list);
+            $("#demo2").paginate({
+                count 		: 10,
+                start 		: parseInt(getQueryString("p")),
+                display     : 9,
+                border					: false,
+                text_color  			: '#888',
+                background_color    	: '#EEE',
+                text_hover_color  		: 'black',
+                background_hover_color	: '#CFCFCF'
+            });
+        });	
+    </script>
+	<script>
+	function like(likename,username)
+		{
+		  $.ajax({
+					type: 'POST',
+					url:"/dianzan",
+					data:{
+						name:likename,
+						username:username
+					},
+					dataType:'JSON',
+					success:function(result){
+						//var data = eval("("+result+")");
+						if(result.code == 1){
+							alert("点赞成功!");
+							
+						}else{
+							alert(result.message);
+						}
+						
+					},
+					error:function(){
+						alert("error！");
+					}
+					});
+				$("#"+likename).css('color','red');
+		}
+	</script>
+    <title></title>
+</head>
+<body>
+<header id="fh5co-header" role="banner" style="position: fixed">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Mobile Toggle Menu Button -->
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                <a class="navbar-brand" href="index.html">Gayest</a>
+            </div>
+            <div id="fh5co-navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="index.html"><span>首页 <span class="border"></span></span></a></li>
+                    <li class="active"><a href="dating.html"><span>交友<span class="border"></span></span></a></li>
+                    <li><a href="news.html"><span>新闻<span class="border"></span></span></a></li>
+                    <li><a href="party.html"><span>爬梯 <span class="border"></span></span></a></li>
+                       {% if state %}
+						<li><a class="turnred" href="" data-target="#myModal" data-toggle="modal"><span id="a" > {{username}} 的空间</span></a></li>
+						{% else %}
+                        <li class="call-to-action" id="oldlog"><a class="turnred" href="" data-target="#myModal" data-toggle="modal"><span id="spanlog">登录</span></a></li>
+                        {% endif %}
+			  </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active  image-wid" style="width: 100%;height: 800px">
+            <img src="../../static/images/d1.jpg" style="width: 100%;height: 800px" alt="..." />
+            <div class="carousel-caption bg" style="left: 10%; top: 30%" >
+                <h3 style="color: #ffffff">{{topname1}}</h3>
+                <p>{{topage1}}-{{topsex1}}-{{topaddress1}}</p>
+                <button type="button" class="btn btn-info sld">Read more</button>
+            </div>
+        </div>
+        <div class="item  image-wid" style="width: 100%;height: 800px">
+            <img src="../../static/images/d2.jpg" alt="..."  style="width: 100%;height: 800px"/>
+            <div class="carousel-caption bg" style="left: 70%;top:40%">
+                <h3 style="color: #ffffff">{{topname2}}</h3>
+                <p>{{topage2}}-{{topsex2}}-{{topaddress2}}</p>
+                <button type="button" class="btn btn-info sld">Read more</button>
+            </div>
+        </div>
+        <div class="item  image-wid" style="width: 100%;height: 800px">
+            <img src="../../static/images/d1.jpg" alt="..." style="width: 100%;height: 800px"/>
+            <div class="carousel-caption bg">
+                <h3 style="color: #ffffff">{{topname3}}</h3>
+                <p>{{topage3}}-{{topsex3}}-{{topaddress3}}</p>
+                <button type="button" class="btn btn-info sld">Read more</button>
+            </div>
+        </div>
+        <div class="item  image-wid" style="width: 100%;height: 800px">
+            <img src="../../static/images/d4.jpg" alt="..." style="width: 100%;height: 800px"/>
+            <div class="carousel-caption bg" style="left:70%; top: 30%">
+                <h3 style="color: #ffffff;">{{topname4}}</h3>
+                <p>{{topage4}}-{{topsex4}}-{{topaddress4}}</p>
+                <button type="button" class="btn btn-info sld">Read more</button>
+            </div>
+        </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+<div class="controllayer" style="margin-top: 2px">
+<div style="width: 100%;height: 70px">
+    <ul class="form_acess">
+    <form class="re-disgn1 method='post'>
+        <input type="text" name="s" class="textbox" value="Search.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search...';}">
+        <input type="submit" value="">
+    </form>
+</ul>
+    </div>
+</div>
+<div class="gallery">
+    <h3 style="text-align: center;padding-top: 20px;padding-bottom: 40px">MAKEING ME BE YOUR FRIENDS{{pageStr}}</h3>
+    <div class="container">
+
+       
+		<div class="container" id="fh5co-products">
+		
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p5.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name1}}</h2>
+                            <p class="icon-links">
+							    <a>{{num1}}</a>
+                                <a id="{{name1}}" onclick="like('{{name1}}','{{username}}')"><span class="icon-heart"><span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex1}}||年龄:{{age1}}||地点:{{address1}}</p>
+                        </figcaption>
+                        <!--  <p><a href="#">Read more</a></p>-->
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p2.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name2}}</h2>
+                            <p class="icon-links">
+							    <a>{{num2}}</a>
+                                <a id="{{name2}}" onclick="like('{{name2}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex2}}||年龄:{{age2}}||地点:{{address2}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="visible-sm-block visible-xs-block clearfix"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid" >
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p3.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name3}}</h2>
+                            <p class="icon-links">
+								<a>{{num3}}</a>
+                                <a id="{{name3}}" onclick="like('{{name3}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+								
+                            </p>
+                            <p class="description">性别:{{sex3}}||年龄:{{age3}}||地点:{{address3}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p6.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name4}}</h2>
+                            <p class="icon-links">
+							<a>{{num4}}</a>
+                                <a id="{{name4}}" onclick="like('{{name4}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex4}}||年龄:{{age4}}||地点:{{address4}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p10.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name5}}</h2>
+                            <p class="icon-links">
+							<a>{{num5}}</a>
+                                <a id="{{name5}}" onclick="like('{{name5}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex5}}||年龄:{{age5}}||地点:{{address5}}</p>
+                        </figcaption>
+                        <!--  <p><a href="#">Read more</a></p>-->
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p11.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name6}}</h2>
+                            <p class="icon-links">
+							<a>{{num6}}</a>
+                                <a id="{{name6}}" onclick="like('{{name6}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex6}}||年龄:{{age6}}||地点:{{address6}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="visible-sm-block visible-xs-block clearfix"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid" >
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p12.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name7}}</h2>
+                            <p class="icon-links">
+							<a>{{num7}}</a>
+                                <a id="{{name7}}" onclick="like('{{name7}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex7}}||年龄:{{age7}}||地点:{{address7}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p13.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name8}}</h2>
+                            <p class="icon-links">
+							<a>{{num8}}</a>
+                                <a id="{{name8}}" onclick="like('{{name8}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex8}}||年龄:{{age8}}||地点:{{address8}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p14.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name9}}</h2>
+                            <p class="icon-links">
+							<a>{{num9}}</a>
+                                <a id="{{name9}}" onclick="like('{{name9}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex9}}||年龄:{{age9}}||地点:{{address9}}</p>
+                        </figcaption>
+                        <!--  <p><a href="#">Read more</a></p>-->
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p15.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name10}}</h2>
+                            <p class="icon-links">
+							<a>{{num10}}</a>
+                                <a id="{{name10}}" onclick="like('{{name10}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex10}}||年龄:{{age10}}||地点:{{address10}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="visible-sm-block visible-xs-block clearfix"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid" >
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p16.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name11}}</h2>
+                            <p class="icon-links">
+							<a>{{num11}}</a>
+                                <a id="{{name11}}" onclick="like('{{name11}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex11}}||年龄:{{age11}}||地点:{{address11}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p17.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name12}}</h2>
+                            <p class="icon-links">
+							<a>{{num12}}</a>
+                                <a id="{{name12}}" onclick="like('{{name12}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex12}}||年龄:{{age12}}||地点:{{address12}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p5.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name13}}</h2>
+                            <p class="icon-links">
+							<a>{{num13}}</a>
+                                <a id="{{name13}}" onclick="like('{{name13}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex13}}||年龄:{{age13}}||地点:{{address13}}</p>
+                        </figcaption>
+                        <!--  <p><a href="#">Read more</a></p>-->
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p2.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name14}}</h2>
+                            <p class="icon-links">
+							<a>{{num14}}</a>
+                                <a id="{{name14}}" onclick="like('{{name14}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex14}}||年龄:{{age14}}||地点:{{address14}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="visible-sm-block visible-xs-block clearfix"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid" >
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p3.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name15}}</h2>
+                            <p class="icon-links">
+							<a>{{num15}}</a>
+                                <a id="{{name15}}" onclick="like('{{name15}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex15}}||年龄:{{age15}}||地点:{{address15}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p6.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name16}}</h2>
+                            <p class="icon-links">
+							<a>{{num16}}</a>
+                                <a id="{{name16}}" onclick="like('{{name16}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex16}}||年龄:{{age16}}||地点:{{address16}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p10.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name17}}</h2>
+                            <p class="icon-links">
+							<a>{{num17}}</a>
+                                <a id="{{name17}}" onclick="like('{{name17}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex17}}||年龄:{{age17}}||地点:{{address17}}</p>
+                        </figcaption>
+                        <!--  <p><a href="#">Read more</a></p>-->
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p11.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name18}}</h2>
+                            <p class="icon-links">
+							<a>{{num18}}</a>
+                                <a id="{{name18}}" onclick="like('{{name18}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex18}}||年龄:{{age18}}||地点:{{address18}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="visible-sm-block visible-xs-block clearfix"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid" >
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p12.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name19}}</h2>
+                            <p class="icon-links">
+							<a>{{num19}}</a>
+                                <a id="{{name19}}" onclick="like('{{name19}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex19}}||年龄:{{age19}}||地点:{{address19}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p13.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name20}}</h2>
+                            <p class="icon-links">
+							<a>{{num20}}</a>
+                                <a id="{{name20}}" onclick="like('{{name20}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex20}}||年龄:{{age20}}||地点:{{address20}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p14.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name21}}</h2>
+                            <p class="icon-links">
+							<a>{{num21}}</a>
+                                <a id="{{name21}}" onclick="like('{{name21}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex21}}||年龄:{{age21}}||地点:{{address21}}</p>
+                        </figcaption>
+                        <!--  <p><a href="#">Read more</a></p>-->
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p15.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name22}}</h2>
+                            <p class="icon-links">
+							<a>{{num22}}</a>
+                                <a id="{{name22}}" onclick="like('{{name22}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex22}}||年龄:{{age22}}||地点:{{address22}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="visible-sm-block visible-xs-block clearfix"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid" >
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p16.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name23}}</h2>
+                            <p class="icon-links">
+							<a>{{num23}}</a>
+                                <a id="{{name23}}" onclick="like('{{name23}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex23}}||年龄:{{age23}}||地点:{{address23}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                <div class="fh5co-product grid">
+                    <figure class="effect-zoe">
+                        <img src="../../static/images/p17.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <figcaption>
+                            <h2>{{name24}}</h2>
+                            <p class="icon-links">
+							<a>{{num24}}</a>
+                                <a id="{{name24}}" onclick="like('{{name24}}','{{username}}')"><span class="icon-heart"></span></a>
+                                <a href="#"><span class="icon-eye"></span></a>
+                                <a href="#"><span class="icon-paper-clip"></span></a>
+                            </p>
+                            <p class="description">性别:{{sex24}}||年龄:{{age24}}||地点:{{address24}}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+            </div>
+     </div>
+	 </div>
+	 </div>
+	  </div>
+    </div>
+<div>
+    <!--<nav>
+        <ul class="pagination pagination-sm" style="background-color:lightpink;width: 100%;height: 30px;padding-left: 85%">
+            <li><a href="#" style="color: lightpink" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+            <li><a href="#" style="color: lightpink">1</a></li>
+            <li><a href="#" style="color: lightpink">2</a></li>
+            <li><a href="#" style="color: lightpink">3</a></li>
+            <li><a href="#" style="color: lightpink">4</a></li>
+            <li><a href="#" style="color: lightpink">5</a></li>
+            <li><a href="#" style="color: lightpink" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+        </ul>
+    </nav>-->
+   <div class="demo" style="text-align: center;padding-left: 50%;margin-left: -150px;background-color: #000000;opacity: 0.8;" >
+        <div id="demo2">
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <div class="footer-left">
+        <ul>
+            <li><a href="#">Contact</a></li>
+            <!--<li><a href="#"  data-toggle="modal" data-target="#myModal">Feedback</a></li>-->
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & conditions</a></li>
+        </ul>
+    </div>
+    <div>
+        <p style="text-align: center;padding-top: 40px">Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/"></a></p>
+    </div>
+    <div class="social">
+        <ul>
+        </ul>
+    </div>
+</footer>
+
+        <script src="../../static/js/jquery.swipebox.min.js"></script>
+        <script type="text/javascript">
+            jQuery(function($) {
+                $(".swipebox").swipebox();
+            });
+        </script>
+</body>
+</html>

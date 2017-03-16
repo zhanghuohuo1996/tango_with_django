@@ -24,7 +24,7 @@ def hello(request):
 	
 	if(page==None):
 		page='1'
-		return HttpResponseRedirect('http://127.0.0.1:8001/dating.html?p=1')
+		return HttpResponseRedirect('http://localhost/dating.html?p=1')
 	pageint=int(page)
 	enchor=24*pageint-24
 	num=24

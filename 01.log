@@ -1,0 +1,19 @@
+2017-02-22 12:42:51,983 DEBUG (0.003) SET SQL_AUTO_IS_NULL = 0; args=None
+2017-02-22 12:42:53,303 DEBUG (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2017-02-22 12:42:54,520 DEBUG (1.216) SHOW FULL TABLES; args=None
+2017-02-22 12:42:55,413 DEBUG (0.865) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-02-22 12:43:09,280 DEBUG (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2017-02-22 12:43:09,441 DEBUG (0.161) SELECT `indexmodel`.`name`, `indexmodel`.`sex`, `indexmodel`.`age`, `indexmodel`.`address`, `indexmodel`.`id` FROM `indexmodel` LIMIT 1; args=()
+2017-02-22 12:43:09,460 DEBUG (0.016) SELECT `indexmodel`.`name`, `indexmodel`.`sex`, `indexmodel`.`age`, `indexmodel`.`address`, `indexmodel`.`id` FROM `indexmodel` LIMIT 1 OFFSET 1; args=()
+2017-02-22 12:43:09,460 DEBUG (0.001) SELECT `indexmodel`.`name`, `indexmodel`.`sex`, `indexmodel`.`age`, `indexmodel`.`address`, `indexmodel`.`id` FROM `indexmodel` LIMIT 1 OFFSET 2; args=()
+2017-02-22 12:43:09,461 DEBUG (0.000) SELECT `indexmodel`.`name`, `indexmodel`.`sex`, `indexmodel`.`age`, `indexmodel`.`address`, `indexmodel`.`id` FROM `indexmodel` LIMIT 1 OFFSET 3; args=()
+2017-02-22 12:43:09,463 DEBUG (0.001) SELECT `indexmodel`.`name`, `indexmodel`.`sex`, `indexmodel`.`age`, `indexmodel`.`address`, `indexmodel`.`id` FROM `indexmodel` LIMIT 1 OFFSET 4; args=()
+2017-02-22 12:43:09,464 DEBUG (0.000) SELECT `indexmodel`.`name`, `indexmodel`.`sex`, `indexmodel`.`age`, `indexmodel`.`address`, `indexmodel`.`id` FROM `indexmodel` LIMIT 1 OFFSET 5; args=()
+2017-02-22 12:43:09,467 DEBUG (0.001) SELECT `indexmodel`.`name`, `indexmodel`.`sex`, `indexmodel`.`age`, `indexmodel`.`address`, `indexmodel`.`id` FROM `indexmodel` LIMIT 1 OFFSET 6; args=()
+2017-02-22 12:43:09,467 DEBUG (0.001) SELECT `indexmodel`.`name`, `indexmodel`.`sex`, `indexmodel`.`age`, `indexmodel`.`address`, `indexmodel`.`id` FROM `indexmodel` LIMIT 1 OFFSET 7; args=()
+2017-02-22 12:43:09,469 DEBUG (0.000) SELECT `indexmodel`.`name`, `indexmodel`.`sex`, `indexmodel`.`age`, `indexmodel`.`address`, `indexmodel`.`id` FROM `indexmodel` LIMIT 1 OFFSET 8; args=()
+2017-02-22 12:43:09,470 DEBUG (0.000) SELECT `indexmodel`.`name`, `indexmodel`.`sex`, `indexmodel`.`age`, `indexmodel`.`address`, `indexmodel`.`id` FROM `indexmodel` LIMIT 1 OFFSET 9; args=()
+2017-02-22 12:43:09,471 DEBUG (0.001) SELECT `indexmodel`.`name`, `indexmodel`.`sex`, `indexmodel`.`age`, `indexmodel`.`address`, `indexmodel`.`id` FROM `indexmodel` LIMIT 1 OFFSET 10; args=()
+2017-02-22 12:43:09,473 DEBUG (0.001) SELECT `indexmodel`.`name`, `indexmodel`.`sex`, `indexmodel`.`age`, `indexmodel`.`address`, `indexmodel`.`id` FROM `indexmodel` LIMIT 1 OFFSET 11; args=()
+2017-02-22 12:43:09,648 DEBUG (0.087) SELECT (1) AS `a` FROM `django_session` WHERE `django_session`.`session_key` = '3402mx65cxngmuxbta7807stdycx772u' LIMIT 1; args=(u'3402mx65cxngmuxbta7807stdycx772u',)
+2017-02-22 12:43:09,700 DEBUG (0.039) INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES ('3402mx65cxngmuxbta7807stdycx772u', 'N2ZmZTU4OTM4ZDg3OTM5MTcxZjQzNjcxNDg3ODU1NzIzZDMzYTk3YTp7InN0YXRlIjpmYWxzZX0=', '2017-03-08 04:43:09'); args=(u'3402mx65cxngmuxbta7807stdycx772u', u'N2ZmZTU4OTM4ZDg3OTM5MTcxZjQzNjcxNDg3ODU1NzIzZDMzYTk3YTp7InN0YXRlIjpmYWxzZX0=', u'2017-03-08 04:43:09')

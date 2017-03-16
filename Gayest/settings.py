@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s %(levelname)s %(message)s',
-    filename='E:/mysite/01.log',
+    filename='../01.log',
     filemode='w'
 )
 INSTALLED_APPS = (

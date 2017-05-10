@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s %(levelname)s %(message)s',
-    filename='../01.log',
+    filename='E:/mysite/01.log',
     filemode='w'
 )
 INSTALLED_APPS = (
@@ -48,6 +48,8 @@ INSTALLED_APPS = (
 	'login',
 	'party',
 	'news_detail',
+	'werkzeug_debugger_runserver',
+    'django_extensions',
 )
 
 MIDDLEWARE_CLASSES = (
